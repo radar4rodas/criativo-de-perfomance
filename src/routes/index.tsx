@@ -2,7 +2,18 @@ import { createFileRoute } from "@tanstack/react-router";
 
 // Landing page visual: a arte aprovada é exibida INTEIRA, sem recriações em CSS.
 // O único elemento de interface separado da imagem é a região clicável do botão.
-const WHATSAPP_LINK = ""; // Aguardando o link correto do proprietário.
+const WHATSAPP_LINK = "https://wa.me/5547989211802";
+
+// Registra o evento Lead ao clicar no botão que abre o WhatsApp.
+// Não impede a navegação se o navegador bloquear o rastreamento.
+function trackLead() {
+  const fbq = (window as typeof window & {
+    fbq?: (...args: unknown[]) => void;
+  }).fbq;
+  if (typeof fbq === "function") {
+    fbq("track", "Lead");
+  }
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,28 +50,17 @@ function LandingPage() {
           decoding="async"
           draggable={false}
         />
-        {WHATSAPP_LINK ? (
-          <a
-            className="whatsapp-hotspot"
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Falar no WhatsApp e solicitar orçamento"
-            title="Falar no WhatsApp"
-          >
-            <span className="sr-only">Falar no WhatsApp</span>
-          </a>
-        ) : (
-          <button
-            className="whatsapp-hotspot"
-            type="button"
-            disabled
-            aria-label="Falar no WhatsApp — aguardando configuração do link"
-            title="Aguardando configuração do link do WhatsApp"
-          >
-            <span className="sr-only">Falar no WhatsApp</span>
-          </button>
-        )}
+        <a
+          className="whatsapp-hotspot"
+          href={WHATSAPP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackLead}
+          aria-label="Falar no WhatsApp e solicitar orçamento"
+          title="Falar no WhatsApp"
+        >
+          <span className="sr-only">Falar no WhatsApp</span>
+        </a>
       </div>
     </main>
   );
