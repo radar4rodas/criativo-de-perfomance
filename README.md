@@ -1,11 +1,14 @@
 # Criativo de Performance
 
-Landing page recriada a partir do layout visual aprovado, sem reaproveitar conteúdo do Radar4Rodas.
+Landing page conectada ao Lovable.
 
-- Tipografia, título, oferta e WhatsApp CTA em HTML/React, responsivos e editáveis.
-- Dois **recortes da referência fornecida pelo usuário** como assets de apoio: fotografia realista do monitor e faixa de quatro cards do portfólio (perfumes, grupo de ofertas, Radinho Garimpa e Cannis Petshop).
-- Não usar emojis no lugar das imagens dos exemplos.
-- WhatsApp pendente: preencher `WHATSAPP_LINK` em `src/routes/index.tsx`.
-- Meta Pixel pendente: aguardar ID, sem reutilizar o Pixel da LP copiada.
+## Implementação atual
 
-Alterações em `main` sincronizam com o Lovable. Não alterar `.lovable/project.json` nem a configuração do framework.
+A página utiliza **a imagem integral aprovada pelo proprietário**, em `public/criativo-de-performance-lp.avif`, sem recriar visualmente o monitor, os textos ou os cards. A conversão usa exclusivamente uma camada HTML com a área clicável posicionada sobre o botão verde que já está desenhado na imagem.
+
+## Pendências de publicação
+
+- **WhatsApp:** aguardar o novo link para inserir em `src/routes/index.tsx` (constante `WHATSAPP_LINK`). Por segurança, o controle permanece desabilitado.
+- **Meta Pixel:** aguardar o ID correto. Não reutilizar os códigos das páginas anteriores.
+
+A imagem ocupa a largura disponível no celular, preserva sua proporção e se ajusta à altura da tela em desktops. Os arquivos de recortes da versão anterior foram excluídos.
