@@ -1,19 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { trackWhatsAppLead } from "../lib/meta-pixel";
 
 // Landing page visual: a arte aprovada é exibida INTEIRA, sem recriações em CSS.
 // O único elemento de interface separado da imagem é a região clicável do botão.
 const WHATSAPP_LINK = "https://wa.me/5547989211802";
-
-// Registra o evento Lead ao clicar no botão que abre o WhatsApp.
-// Não impede a navegação se o navegador bloquear o rastreamento.
-function trackLead() {
-  const fbq = (window as typeof window & {
-    fbq?: (...args: unknown[]) => void;
-  }).fbq;
-  if (typeof fbq === "function") {
-    fbq("track", "Lead");
-  }
-}
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,7 +45,7 @@ function LandingPage() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={trackLead}
+          onClick={trackWhatsAppLead}
           aria-label="Falar no WhatsApp e solicitar orçamento"
           title="Falar no WhatsApp"
         >
