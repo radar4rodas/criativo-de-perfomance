@@ -4,7 +4,7 @@
  * Um único bootstrap no cliente, compatível com TanStack Start/SSR.
  * O guard evita PageView duplicado durante remounts / React StrictMode.
  */
-export const META_PIXEL_ID = "1391985675598607";
+export const META_PIXEL_ID = "1578641077611583";
 
 type Fbq = {
   (...args: unknown[]): void;
