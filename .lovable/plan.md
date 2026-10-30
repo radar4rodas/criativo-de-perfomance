@@ -1,24 +1,7 @@
-# Redesenho enxuto da landing page Radar 4 Rodas
+# Criativo de Performance — landing page
 
-## Objetivo
-Transformar a página atual em uma experiência curta e mobile-first, concentrando logo, proposta, três benefícios e CTA principal na primeira visualização, sem alterar rastreamento ou destino dos botões.
+Recriar integralmente esta página como um produto novo. Este repositório foi copiado de uma LP do Radar4Rodas; não reutilizar conteúdo, links, pixels, branding ou lógica da página anterior.
 
-## Alterações visuais
-- Manter o logo oficial e o fundo automotivo atual, reduzindo elementos decorativos e espaçamentos.
-- Exibir no topo, em sequência compacta: “GRUPO GRATUITO NO WHATSAPP”, headline, subheadline e três benefícios.
-- Tornar “ENTRAR GRÁTIS NO GRUPO” o principal destaque visual, seguido de “Gratuito • Sem conversas • Saia quando quiser”.
-- Manter “🔥 Vagas limitadas” junto ao CTA, pois essa mensagem já faz parte da comunicação solicitada anteriormente.
-- Remover as seções longas, cards de produtos, relatos, benefícios repetidos e bloco final grande de conversão.
-- Manter apenas um fechamento discreto com a assinatura da marca, sem competir com o CTA principal.
-- Garantir encaixe profissional em celulares comuns e uma composição centralizada, curta e equilibrada no desktop.
+Layout aprovado: azul neon sobre fundo escuro, título "CRIATIVOS EXCLUSIVOS PARA O SEU NICHO.", quatro exemplos em cards (perfumes, ofertas, Radinho Garimpa, pet shop), bloco de CTA "VAMOS CRIAR OS SEUS PRÓXIMOS RESULTADOS?" e botão verde de WhatsApp.
 
-## Preservação obrigatória
-- Manter exatamente o link atual do grupo de WhatsApp.
-- Preservar sem mudanças a função `trackLead`, sua trava global por sessão e a geração de `eventID` com `crypto.randomUUID()`.
-- Preservar o Meta Pixel base, `PageView`, ID `1391985675598607` e todas as configurações existentes.
-- Não adicionar formulários, menus, pop-ups, páginas, depoimentos, contadores ou informações novas.
-
-## Validação
-- Verificar a página em larguras comuns de celular e desktop.
-- Confirmar que não há cortes, sobreposições nem rolagem horizontal.
-- Confirmar que o CTA mantém o link e dispara a mesma lógica de Lead, sem duplicação.
+Recriar em React/HTML/CSS responsivo e editável, nunca inserir a imagem do mockup como plano de fundo. O usuário enviará posteriormente o link de WhatsApp e o Meta Pixel. Até lá não inserir os dados de outro projeto nem rastreamento fictício.

@@ -1,24 +1,19 @@
-# CRIATIVO DE PERFOMANCE
+# Criativo de Performance
 
-Crie uma landing page mobile-first para a marca Radar4Rodas, com o único objetivo de levar visitantes para um grupo de ofertas automotivas no WhatsApp. Use fundo preto, detalhes em vermelho e branco, visual moderno e automotivo. No topo, espaço para o logo Radar4Rodas. Headline principal: “As melhores ofertas automotivas antes que acabem.” Subheadline: “Promoções de pneus, ferramentas, acessórios, multimídias e muito mais direto no WhatsApp.” Adicione uma seção curta com benefícios: ofertas selecionadas, cupons quando disponíveis, produtos automotivos em promoção, grupo fechado sem conversas e alertas de preço. Coloque um botão grande e chamativo em VERDE com o texto “RECEBER OFERTAS NO WHATSAPP”. O botão deve levar para um link de convite de grupo do WhatsApp. Adicione uma seção de confiança com a frase “Sem spam. Só ofertas automotivas selecionadas.” Repita o botão de WhatsApp no final da página. A página deve ser rápida, responsiva, focada em celular e sem menus ou links que desviem a atenção.Utilize o logo que enviei como identidade oficial da marca Radar4Rodas. Não recrie, não altere e não modifique o logo. Extraia dele a identidade visual da página, utilizando principalmente preto, vermelho, branco e tons metálicos. A página deve manter aparência automotiva, moderna e premium.
+Landing page de uma tela, mobile-first, para divulgação de criativos exclusivos de tráfego pago.
 
-This project was built with [Lovable](https://lovable.dev).
+## Identidade visual
+- Fundo azul-marinho/preto com luzes azul neon.
+- Headline: "CRIATIVOS EXCLUSIVOS PARA O SEU NICHO."
+- Exemplos de campanhas de perfumes, ofertas gerais, Radinho Garimpa e pet shop.
+- Conversão por WhatsApp.
 
-## Build with Lovable
+## Integrações ainda pendentes
+- **WhatsApp:** inserir a URL correta em `WHATSAPP_LINK` de `src/routes/index.tsx`. O botão foi deixado desabilitado de propósito para não levar ao grupo de outra empresa.
+- **Meta Pixel:** inserir APENAS após receber o novo ID do proprietário. Nenhum Pixel antigo foi reutilizado.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/7854db71-981a-4eb2-92a2-a706293428ef).
+## Desenvolvimento
+Projeto TanStack Start conectado ao Lovable. Manter a pasta `.lovable`, o roteamento e o setup do Vite. Alterações enviadas ao branch `main` aparecem no editor Lovable.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## Nota
+O conteúdo de divulgação do Radar4Rodas foi removido deste projeto. Os exemplos de criativos atuais são versões HTML/CSS autorais para formar o layout inicial; os arquivos fotográficos originais poderão substituir esses cards sem alterar a estrutura da LP.
